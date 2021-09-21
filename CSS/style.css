@@ -30,6 +30,11 @@ body {
 
 .clock {
     border: solid royalblue 5px;
-    align-items: center;
+    width: 25%;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    margin: auto; 
+   padding: 10px;
+   font-size: larger;
 }
