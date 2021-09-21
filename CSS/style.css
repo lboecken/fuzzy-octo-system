@@ -27,3 +27,9 @@ ul#horizontal-list li {
 body {
     background-color: rgb(138, 135, 135);
 }
+
+.clock {
+    border: solid royalblue 5px;
+    align-items: center;
+    text-align: center;
+}
