@@ -13,7 +13,7 @@
         <ul id="horizontal-list">
             <li><a href="/index.html">HOME</a></li>
             <li><a href="/contact.html">CONTACT</a></li>
-            <li><a href="/clock.html">CONTACT</a></li>
+            <li><a href="/clock.html">CLOCK</a></li>
         </ul>
     </div>
     <div id="overview">
@@ -21,8 +21,9 @@
     </div>
     <div id="Day-Month-Year" class="clock">
         <p>
-            <span id="Month"><script>setInterval(GetMonth, 1000)</script></span>
             <span id="Day"><script>setInterval(GetDay, 1000)</script></span>,
+            <span id="Month"><script>setInterval(GetMonth, 1000)</script></span>
+            <span id="Date"><script>setInterval(GetCalendarDate, 1000)</script></span>,
             <span id="Year"><script>setInterval(GetYear, 1000)</script></span>
         <br>
             <span id="Hour"><script>setInterval(GetHours, 1000)</script></span> :

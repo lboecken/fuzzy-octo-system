@@ -28,8 +28,37 @@ function GetHours() {
 function GetDay() {
     let Day;
     const TimeToDisplay = new Date();
-    Day = TimeToDisplay.getDate();
-    document.getElementById("Day").innerHTML = Day;
+    Day = TimeToDisplay.getDay();
+    switch(Day) {
+        case 0:
+            document.getElementById("Day").innerHTML = "Monday"
+            break;
+        case 1:
+            document.getElementById("Day").innerHTML = "Tuesday"
+            break;
+        case 2:
+            document.getElementById("Day").innerHTML = "Wednesday"
+            break;
+        case 3:
+            document.getElementById("Day").innerHTML = "Thursday"
+            break;
+        case 4:
+            document.getElementById("Day").innerHTML = "Friday"
+            break;
+        case 5:
+            document.getElementById("Day").innerHTML = "Saturday"
+            break;
+        case 6:
+            document.getElementById("Day").innerHTML = "Sunday"
+            break;
+    }
+}
+
+function GetCalendarDate() {
+    let CalendarDate;
+    const TimeToDisplay = new Date();
+    CalendarDate = TimeToDisplay.getDate();
+    document.getElementById("Date").innerHTML = CalendarDate;
 }
 
 function GetMonth () {
