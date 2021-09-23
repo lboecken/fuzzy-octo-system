@@ -1,15 +1,28 @@
+/* 
+#2864AD darker blue
+#529EFA middle blue
+#6EAFFF lite blue
+#AD7917 gold
+#FAEACD pink
+*/
+* {
+    box-sizing: border-box;
+}
+
 h1 {
-    color: blue;
+    color: #AD7917;
     text-align: center;
 }
 
 #brief_description {
-    text-align: center;
+    float: left;
+    width: 50%;
 }
 
 #self_portrait {
+    float: right;
     display:block;
-    width: 60%;
+    width: 45%;
     margin-left: auto;
     margin-right: auto;   
 }
@@ -20,12 +33,38 @@ h1 {
     margin-right: auto;
 }
 
-ul#horizontal-list li {
-    display: inline;
+#navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #6EAFFF;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+#navbar li {
+    float: left;
+}
+
+#navbar li a {
+    display: block;
+    background: #2864AD;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+    background: #529EFA;
+    cursor: pointer;
+}
+
+#navbar li a:visited {
 }
 
 body {
-    background-color: rgb(138, 135, 135);
+    background-color: #FAEACD;
+    font-family: "Helvetica Neue",Helvetica,Arial;
+    line-height: 1.5em;
 }
 
 .clock {
