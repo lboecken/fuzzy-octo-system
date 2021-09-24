@@ -33,6 +33,37 @@ h1 {
     margin-right: auto;
 }
 
+
+body {
+    background-color: #FAEACD;
+    font-family: "Helvetica Neue",Helvetica,Arial;
+    line-height: 1.5em;
+}
+
+.clock {
+    border: solid royalblue 5px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto; 
+   padding: 10px;
+   font-size: larger;
+}
+
+/***************** todo  ********************/
+ul#CurrentToDos li {
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+/****************** navbar ******************/
 #navbar {
     list-style: none;
     margin: 0;
@@ -56,24 +87,4 @@ h1 {
 #navbar li a:hover {
     background: #529EFA;
     cursor: pointer;
-}
-
-#navbar li a:visited {
-}
-
-body {
-    background-color: #FAEACD;
-    font-family: "Helvetica Neue",Helvetica,Arial;
-    line-height: 1.5em;
-}
-
-.clock {
-    border: solid royalblue 5px;
-    width: 25%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: auto; 
-   padding: 10px;
-   font-size: larger;
 }
