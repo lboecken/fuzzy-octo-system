@@ -18,7 +18,7 @@ function CreateNewToDo(todo) {
     function CreateFinishedButtonForNewToDo() {
         const NewButton = document.createElement('button');
         NewButton.type = 'submit';
-        // NewButton.id = ToDoCounter;
+        NewButton.id = ToDoCounter;
         NewButton.appendChild(document.createTextNode('Finished'))
         li_newToDo.appendChild(NewButton);
     }
@@ -26,7 +26,8 @@ function CreateNewToDo(todo) {
     function CreateDeleteButtonForNewToDo() {
         const NewButton = document.createElement('button');
         NewButton.type = 'submit';
-        // NewButton.id = ToDoCounter;
+        NewButton.id = ToDoCounter;
+        NewButton.onclick = DeleteToDo;
         NewButton.appendChild(document.createTextNode('Delete'))
         li_newToDo.appendChild(NewButton);
     }
@@ -45,11 +46,12 @@ function CreateNewToDo(todo) {
 }
 
 function MarkToDoComplete(id) {
-    document.getElementById(id).style.text-decoration = line-through;
+    let myElement = document.selectElementById(id)
+    ;
 }
 
 function DeleteToDo() {
-    null //remove to do from html.
+    console.log('does this work?')    
 }
 
 function HideFinishedToDo() {
@@ -65,3 +67,4 @@ function ShowFinishedToDo() {
 inputField.addEventListener("keydown", (e) => 
     {if (e.key == "Enter") CreateNewToDo(inputField.value);
 });
+
