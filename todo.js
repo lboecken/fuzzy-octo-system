@@ -18,7 +18,10 @@ function CreateNewToDo(todo) {
     
 
     function FillNewToDoWithText() {
-        li_newToDo.appendChild(document.createTextNode(todo));
+        const Paragraph = document.createElement('p');
+        Paragraph.className = ToDoCounter;
+        Paragraph.appendChild(document.createTextNode(todo));
+        li_newToDo.appendChild(Paragraph);
     }
     function CreateFinishedButtonForNewToDo() {
         const NewButton = document.createElement('input');
@@ -68,11 +71,11 @@ function ShowOrHideFinishedToDos() {
     AllToDos.forEach(element => {
         if (AreToDosHidden == true) {
             if (element.style.textDecoration === 'line-through') {
-                element.style.display = 'block';
+                element.style.visibility = 'hidden';
             }
         } else { 
             if (element.style.textDecoration === 'line-through') {
-                element.style.display = 'none';
+                element.style.visibility = 'visible';
                 
             }
         }    
