@@ -1,63 +1,140 @@
-/* 
-#2864AD darker blue
-#529EFA middle blue
-#6EAFFF lite blue
-#AD7917 gold
-#FAEACD pink
-*/
+
+/*************** general styling for all pages *************/
 * {
     box-sizing: border-box;
 }
 
-h1 {
-    color: #AD7917;
-    text-align: center;
-}
-
-#brief_description {
-    float: left;
-    width: 50%;
-}
-
-#self_portrait {
-    float: right;
-    display:block;
-    width: 45%;
-    margin-left: auto;
-    margin-right: auto;   
-}
-
-.contact {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 
 body {
-    background-color: #FAEACD;
+    background-color: #344a72;
     font-family: "Helvetica Neue",Helvetica,Arial;
     line-height: 1.5em;
 }
 
-.clock {
-    border: solid royalblue 5px;
-    width: 25%;
-    display: flex;
-    justify-content: center;
+
+
+
+/***************** home ********************/
+#brief_description {
+    float: left;
+    width: 60%;
+    color:#fff;
+}
+
+#self_portrait {
+    float: right;
+    width: 35%;
+}
+
+#AboutMe {
     text-align: center;
-    margin: auto; 
-   padding: 10px;
-   font-size: larger;
+    color: #fff;
+}
+
+
+
+
+/***************** contactme ********************/
+.contact {
+    margin: auto;
+    max-width: 75%;
+    text-align: center;
+    margin-top: 70px;
+    padding: 70px 0px;
+    font-size: 32px;
+    color: #fff;
+    border: 10px solid #6EAFFF;
+    border-radius: 15px;
+}
+
+
+/***************** clock ********************/
+.clock {
+    margin: auto;
+    max-width: 75%;
+    text-align: center;
+    margin-top: 70px;
+    padding: 70px 0px;
+    font-size: 70px;
+    color: #fff;
+    border: 10px solid #6EAFFF;
+    border-radius: 15px;
+    
 }
 
 /***************** todo  ********************/
-ul#CurrentToDos li {
-    list-style-type: none;
+.todo {
+    margin: auto;
+    max-width: 100%;
+    text-align: center;
 }
 
+#inputField {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    height: 75px;
+    width: 400px;
+    font-size: larger;
+    border: 10px solid #6EAFFF;
+    border-radius: 5px;
 
+}
 
+#inputField:focus {
+    outline: none;
+}
+
+#ShowHideButton {
+    background: #6eafff;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+#ShowHideButton:hover {
+    background: #6eafff9c;
+
+}
+
+.todo ul li button {
+    background: #6eafff;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 10x 20px;
+    margin-left: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline;
+
+}
+
+.todo ul li input {
+    display: inline;
+    margin-right: 20px;
+}
+
+.todo li button:hover {
+    background: #6eafff9c;
+}
+
+.todo ul li {
+    color: #fff;
+    height: 30px;
+    width: 200px;
+    margin: auto;
+    align-items: center;
+    list-style-type: none;
+    font-size: 20px;
+    white-space: nowrap;
+}
 
 
 
@@ -67,6 +144,7 @@ ul#CurrentToDos li {
 #navbar {
     list-style: none;
     margin: 0;
+    margin-bottom: 20px;
     padding: 0;
     background: #6EAFFF;
     border-radius: 5px;
@@ -80,6 +158,7 @@ ul#CurrentToDos li {
 #navbar li a {
     display: block;
     background: #2864AD;
+    color: #FFFF;
     padding: 15px 20px;
     text-decoration: none;
 }
@@ -87,4 +166,8 @@ ul#CurrentToDos li {
 #navbar li a:hover {
     background: #529EFA;
     cursor: pointer;
+}
+
+#navbar li a:visited {
+    color: #FFF;
 }

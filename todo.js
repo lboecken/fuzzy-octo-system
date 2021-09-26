@@ -10,11 +10,16 @@ function CreateNewToDo(todo) {
     let li_newToDo;
     CreateNewElementForNewToDo();
     CreateFinishedButtonForNewToDo();
+    FillNewToDoWithText();
     CreateDeleteButtonForNewToDo();
     AttachNewToDoToUL();
     UpdateToDoCounter();
     inputField.value = null;
     
+
+    function FillNewToDoWithText() {
+        li_newToDo.appendChild(document.createTextNode(todo));
+    }
     function CreateFinishedButtonForNewToDo() {
         const NewButton = document.createElement('input');
         NewButton.type = 'checkbox';
@@ -35,7 +40,6 @@ function CreateNewToDo(todo) {
     
     function CreateNewElementForNewToDo() {
         li_newToDo = document.createElement('li');
-        li_newToDo.appendChild(document.createTextNode(todo));
         li_newToDo.className = ToDoCounter
     }
     
@@ -89,6 +93,6 @@ inputField.addEventListener("keydown", (e) =>
 
 ShowHideButton.addEventListener('click', ShowOrHideFinishedToDos)
 
-
+console.log(window)
 
 
