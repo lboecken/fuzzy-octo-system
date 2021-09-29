@@ -1,11 +1,7 @@
-* {
-    box-sizing: border-box;
-}
-
 h1 {
     text-align: center;
     line-height: 60px;
-    background: #49AB55;
+    background: 6EAFFF;
     color: #fff;
     width: 50%;
     margin: auto;
@@ -15,7 +11,7 @@ h1 {
 }
 
 h2 {
-    background: #49AB55;
+    background: 6EAFFF;
     color: #fff;
     height: 45px;
     line-height: 45px;
@@ -39,6 +35,7 @@ form input {
 
 form label{
     font: bold 24px arial;
+    color: #fff;
 }
 
 #comment {
@@ -52,11 +49,16 @@ form label{
     display: block;
     margin: auto;
     width: 75%;
-    background: #49AB55;
+    background: #2864AD;
     height: 60px;
     font-size: 45px;
     cursor: pointer;
-    
+    color: #FFFFFF;
+}
+
+#trackbutton:hover {
+    background: #529EFA;
+    cursor: pointer; 
 }
 
 
@@ -73,6 +75,7 @@ table {
     table-layout: fixed;
     width: 90%;
     word-wrap: break;
+    background: white;
 }
 #tableDate {
     width: 15% ;
