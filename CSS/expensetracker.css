@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    line-height: 60px;
+    background: #49AB55;
+    color: #fff;
+    width: 50%;
+    margin: auto;
+    height: 60px;
+    border-radius:5px;
+    font-size: 42px;
+}
+
+h2 {
+    background: #49AB55;
+    color: #fff;
+    height: 45px;
+    line-height: 45px;
+    width: 25%;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+
+/* INPUT FORM */
+form {
+    border:solid 1px darkblue;
+    width: 50%;
+    max-height: fit-content;
+}
+
+form input {
+    display: block;
+}
+
+form label{
+    font: bold 24px arial;
+}
+
+#comment {
+    width: 90%;
+    height: 60px;
+    text-overflow: auto;
+    
+}
+
+#trackbutton {
+    display: block;
+    margin: auto;
+    width: 75%;
+    background: #49AB55;
+    height: 60px;
+    font-size: 45px;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+/* TABLE */
+
+tr, td, th {
+    border: 1px solid black;
+}
+
+table {
+    table-layout: fixed;
+    width: 90%;
+    word-wrap: break;
+}
+#tableDate {
+    width: 15% ;
+}
+
+#tableAmount {
+    width: 10% ;
+}
+
+#tableVendor {
+    width: 20%;
+}
+
+#tableComment {
+    width: 55%;
+}
+
+tbody tr td button{
+    margin-left: 10px;
+}
+
+
+

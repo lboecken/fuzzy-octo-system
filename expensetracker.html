@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style src="style.css"></style>
+    <link rel="stylesheet" href="CSS/expensetracker.css">
+</head>
+<body>
+    <h1>EXPENSE TRACKER</h1>
+    <div id=inputForm>
+        <h2>Add Expenses</h2>
+        <form action="">
+            <label for="date">Date</label>
+            <input type="date" id="date">
+            
+            <label for="amount">Amount</label>
+            <input type="text" id="amount" placeholder="$20.00">
+            
+            <label for="vendor">Vendor</label>
+            <input type="text" id="vendor" placeholder="Walmart">
+            
+            <label for="comment">Comment</label>
+            <input type="text" id="comment" placeholder="Bought some Ice Cream">
+            
+            <label for="trackbutton"></label>
+            <button type="button" id="trackbutton">Track</button>
+        </form>
+    </div>
+    <div id=expenseTable>
+        <h2>Track Expenses</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th id='tableDate'>Date</th>
+                    <th id='tableAmount'>Amount</th>
+                    <th id='tableVendor'>Vendor</th>
+                    <th id='tableComment'>Comment</th>
+                </tr>
+            </thead>
+            <tbody id="tablebody">
+                <tr></tr>
+            </tbody>
+            
+        </table>    
+    </div>
+</body>
+<script src="expensetracker.js"></script>
+</html>
